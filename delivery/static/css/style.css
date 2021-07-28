@@ -1,0 +1,281 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body { 
+    height: 100%;
+    font-family: pixel;
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #b0cddf;
+    display: inline-block;
+    
+
+}
+
+.nav_logo {
+    
+    font-size: 25px;
+    color: white;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: left;
+    
+}
+
+.nav_list {
+    
+    float: none;
+    display: inline-block;
+    
+    
+}
+
+.nav_list .nav_item {
+    
+    padding: 15px 10px;
+    font-size: 17px;
+    color: white;
+    display: inline-block;   
+    opacity: 0.7;
+    height: 50px;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;    
+}
+
+.nav_item:hover{
+    background-color: #55a4d5;
+}
+
+.banner > .container {
+    height: 100%;
+    
+}
+
+.container .nav_list{
+    height: 100%;
+}
+
+.form {
+    padding: 10px;
+    width: 30%;
+    min-width: 250px;
+    opacity: 0.90;
+    background-color: white;
+    float: right;
+    border: 7px solid #b0cddf;
+    margin-top: 15px;
+    border-radius: 10px;
+    animation-name: anima;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes anima{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.90;
+    }
+}
+
+.form h2{
+    color:#55a4d5;
+    text-align: center;
+    display: inline-block;
+}
+
+.input span{
+    display: inline-block;
+    font-size: 20px;
+    color: #55a4d5;
+    margin-top: 7px;
+
+}
+
+.input input[type=text]{
+    font-size: 15px;
+    width: 95%;
+    height: 35px;
+    outline: 0;
+    padding-left: 3px;
+    border-radius: 4px;
+    border: 1.5px solid #55a4d5;
+    
+
+}
+.input textarea{
+
+    width: 95%;
+    height: 150px;
+    resize: none;
+    padding: 5px;
+    margin-top: 7px;
+    outline: 0;
+    border-radius: 4px;
+    border: 1.7px solid #55a4d5;
+}
+
+.input input[type=submit]{
+    width: 50%;
+    height: 30px;
+    background-color: #55a4d5 ;
+    font-size: 20px;
+    color: white;
+    margin: 10px 25%;
+    border: 1px;
+    border-color: white;
+    cursor: pointer;
+    outline: 0;
+    
+}
+
+.input input[type=submit]:hover{
+    background-color: #4783a9;
+}
+.input :focus{
+   border: 2px solid #55a4d5;
+   color: #55a4d5;
+}
+
+.session1 {
+    background-color: white;
+    text-align: center;
+    padding:50px 0;
+}
+.session1 .container {
+    width: 70%;
+    min-width: 250px;
+    margin: 25px auto;
+
+}
+.session1 h2{
+    font-weight: normal;
+    color: #55a4d5;
+}
+
+.session1 p {
+    margin-top: 25px;
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+}
+
+#texto {
+    display: none;
+}
+
+.alianca {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-image:url(../images/alianca.png);
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    
+}
+
+
+.session2 {
+    background-color: #b0cddf;
+    text-align: center;
+    padding: 75px 0;
+    height: 100%;
+}
+
+.session2 h2{
+    font-weight: normal;
+    color: #186594;
+    margin: 0 auto;
+    
+}
+
+
+.card {
+    width: calc(100% / 3);
+    padding: 30px;
+    vertical-align: top;
+    float: left;
+    
+}
+
+.card-image img{
+    
+    height: 100px;
+    margin: 30px auto;
+}
+
+
+.card-text {
+    font-size: 20px;
+    color: #186594;
+    
+}
+
+.footer {
+    padding: 30px;
+    border-top: 2px solid #0a3e5e;
+    background-color: white;
+    
+    
+}
+
+.footer p {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgba(172, 169, 169, 0.981);
+}
+
+@media screen and (max-width: 700px) {
+    .card{
+        
+        float: none;
+        display: inline-block;
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .card{
+        width: 100%;
+    
+    }
+    
+    .form{
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .banner{
+        background-size: cover;
+    }
+
+}
+
+.clear {
+    clear: both;
+}

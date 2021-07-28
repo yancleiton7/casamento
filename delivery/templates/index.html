@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block extra_scripts %}
+{% endblock extra_scripts %}
+
+{% block body %}
+<body>
+    
+    <nav class="header">
+        <div class="container">
+            <div class="nav_logo">Y & I</div>
+            <ul class="nav_list">
+                <li class="nav_item">Home</li>
+                <li class="nav_item">Fotos</li>
+                <li class="nav_item">Lista de Presentes</li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+    
+            <div class="banner">
+                <div class="container">
+                    <div class="form">
+                        <h2>Envie aqui a sua mensagem para os noivos!</h2>
+                        <div class="input">
+                            <span>Nome*</span>
+                            <input type="text" name="nome" id="valor" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="input">
+                            <span>Telefone*</span>
+                            <input type="text" name="tel"  placeholder="(99) 99999-9999">
+                        </div>
+                        <div class="input">
+                            <span>Email*</span>
+                            <input type="text" name="email"  placeholder="Digite seu email">
+                        </div>
+                        <div class="input">
+                            <span>Sua Mensagem*</span>
+                            <textarea name="msg"  cols="30" rows="10"></textarea>
+                        </div>
+    
+                        <div class="input"><input type="submit" name="enviar" value="Enviar" onclick="capturar()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="session1">
+                <div class="container">
+    
+                    <h2><span id="escrever"></span>Pode entrar! Esse é o nosso site de casamento!</h2>
+                    <p>Os momentos de nossas vidas são muito abundantes para serem desfrutados só. Tanto as risadas quanto as dores quando experimentadas com mais alguem podem fazer uma grande diferença na nossa estrada.
+                    </p>
+                    <p>Nosso casamento está chegando e esse é um espaço para você explorar e conhecer um pouco mais sobre nós, ver algumas fotos, mandar uma mensagem e ver nossa listinha de casamento também!</p>
+                </div>
+    
+    
+    
+    
+            </div>
+            <div class="alianca"></div>
+            <div class="session2">
+                <div class="container">
+                    <h2>Conheça um pouco da nossa história</h2>
+                    <div class="card">
+                        <div class="card-image"><img src="../static/images/faculdade.png" alt=""></div>
+                        <div class="card-text">Uma caminhada que começou na faculdade...</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"><img src="../static/images/bible.png" alt=""></div>
+                        <div class="card-text">Foi semeada na missão...</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image"><img src="../static/images/heath.png" alt=""></div>
+                        <div class="card-text">Que se tornou um amor para a vida!</div>
+    
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </main>
+    
+    
+    
+    </body>
+</body>
+
+
+{% endblock body %}
